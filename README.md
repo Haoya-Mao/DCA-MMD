@@ -30,8 +30,6 @@ Download the pretrain weights from [Google Drive](https://drive.google.com/drive
 
 Moreover, The train/test config and saved checkpoints are saved in the following format as above.
 
-Download the meta-train snapshot from [Google Drive](https://drive.google.com/drive/folders/1CGkmW7rayh5sFjwjgE2w8t4XOValfbLi?usp=drive_link) and extract it into the `snapshots/` folder.
-
 ### Train and Test
 
 For example,to train 5-way 1-shot on miniimagenet GPU 0
