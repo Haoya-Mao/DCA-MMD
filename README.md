@@ -33,14 +33,25 @@ Moreover, The train/test config and saved checkpoints are saved in the following
 
 Download the meta-train snapshot from [Google Drive](https://drive.google.com/drive/folders/1CGkmW7rayh5sFjwjgE2w8t4XOValfbLi?usp=drive_link) and extract it into the `snapshots/` folder.
 
-### Meta-training
+### Train and Test
 
-For example, Swin-Tiny AMMD 5-way 5-shot miniimagenet GPU 0
+For example,to train 5-way 1-shot on miniimagenet GPU 0
 ```
-python experiments/run_trainer.py \
-  --cfg ./configs_DCA-MMD/miniImagenet/yours.yaml \
-  -pt ./pretrain/Res/mini \
-  --device 0
+python experiments/run_trainer.py   
+--cfg configs_DCAMMD/miniImagenet/DCAMMD_linear_triplet_N5K1.yaml   
+-pt pretrain/ResNet/mini   
+-d 0   
+model.forward_encoding FCN_R12   
+model.mmd.AMMD_feature 1
+```
+For example,to test 5-way 5-shot on FC100 GPU 0
+```
+python experiments/run_evaluator.py   
+--cfg configs_DCAMMD/FC100/DCAMMD_linear_triplet_N5K5_R12.yaml   
+-c checkpoint/FC100/masked_ratio_0.0/FC100_DCAMMD_linear_triplet_N5K5/ebest_5way_5shot.pth   
+-d 0   
+model.forward_encoding FCN_R12   
+model.mmd.AMMD_feature 1
 ```
 
 ## Few-shot Classification Results
