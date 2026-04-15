@@ -24,7 +24,7 @@ The miniimagenet and tieredimagenet-DeepEMD dataset can be downloaded from [FRN]
 
 ## Train and Test
 
-We follow the pretrain method from [FewTURE](https://github.com/mrkshllr/FewTURE) for Swin-Tiny and ViT-Small backbone, [MCL](https://github.com/cyvius96/prototypical-network-pytorch) for ResNet-12 backbone.
+We follow the pretrain method from [MCL](https://github.com/cyvius96/prototypical-network-pytorch) for ResNet-12 backbone.
 
 Download the pretrain weights from [Google Drive](https://drive.google.com/drive/folders/1Y2mEmOQHcTcKprVlZbtvRgXsPXT7IiD2?usp=drive_link) and extract it into the `pretrain/` folder.
 
