@@ -38,7 +38,7 @@ python experiments/run_trainer.py
 -pt pretrain/ResNet/mini   
 -d 0   
 model.forward_encoding FCN_R12   
-model.mmd.AMMD_feature 1
+model.mmd.DCAMMD_feature 1
 ```
 For example,to test 5-way 5-shot on FC100 GPU 0
 ```
@@ -47,7 +47,7 @@ python experiments/run_evaluator.py
 -c checkpoint/FC100/masked_ratio_0.0/FC100_DCAMMD_linear_triplet_N5K5/ebest_5way_5shot.pth   
 -d 0   
 model.forward_encoding FCN_R12   
-model.mmd.AMMD_feature 1
+model.mmd.DCAMMD_feature 1
 ```
 
 ## Few-shot Classification Results
