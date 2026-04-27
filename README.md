@@ -1,6 +1,5 @@
-# DCA-MMD
-# Multi-Scale Dual Cross-Attentive MMD for Few-Shot Image Classification
-
+# Multi-Scale Cross-Graph Adaptive Distribution Generation for Few-Shot Image Classification
+Code relaese for [Multi-Scale Cross-Graph Adaptive Distribution Generation for Few-Shot Image Classification].
 
 ## Overview
 
@@ -15,7 +14,7 @@ The following packages are required to run the scripts:
 - [tensorboard](https://www.tensorflow.org/tensorboard)
 
 
-## Dataset prepare
+## Dataset
 
 The dataset should be placed in dir "./data/dataset_name" with the same format. 
 
